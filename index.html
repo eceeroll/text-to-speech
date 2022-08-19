@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- JavaScript -->
+    <script src="main.js" defer></script>
+    <title>Text to Speech</title>
+</head>
+<body>
+    <!-- <i class="fa-solid fa-play"></i>
+    <i class="fa-solid fa-pause"></i>
+    <i class="fa-solid fa-rotate-left"></i> -->
+    <div class="container">
+        <header class="title">Text to Speech</header>
+        <div class="delete-icon">
+            <i class="fa-solid fa-trash"></i>
+        </div>
+        <textarea id="textarea" cols="30" rows="10" placeholder="Start typing here..."></textarea>
+        <div class="buttons">
+            <label for="speed">Speed:</label>
+            <input type="number" id="speed-input" min="0.5" max="3" step=".5" value="1">
+            <button id="play-button" class="btn"> <i class="fa-solid fa-play"></i></button>
+            <button id="pause-button" class="btn"> <i class="fa-solid fa-pause"></i></button>
+            <button id="restart-button" class="btn"> <i class="fa-solid fa-rotate-left"></i></button>
+        </div>
+    </div>  
+
+</body>
+</html>
